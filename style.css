@@ -12,15 +12,28 @@ body {
 
 .container {
     background-color: white;
-    padding: 20px;
+    padding: 2vh clamp(2vw, 5%, 6vw);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-content: center;
+    width: clamp(300px, 28vw, 600px); /* Responsive width */
+    height: clamp(350px, 55vh, 515px);
+}
+
+#video {
+    width: clamp(15rem, 20vw, 600px);
+    height: auto;
 }
 
 h1 {
     color: #333;
+    font-size: clamp(1rem, 2vw, 3rem);
 }
 
 p {
     color: #666;
+    font-size: clamp(1rem, 1vw, 3rem);
 }
+
+
