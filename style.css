@@ -19,8 +19,9 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     align-content: center;
-    width: clamp(300px, 28vw, 600px); /* Responsive width */
-    height: clamp(0px, 15vh, 515px);
+    width: clamp(20rem, 28vw, 50rem); /* Responsive width */
+    /* height: clamp(90px, 15vh, 151px); */
+    height: clamp(5rem, 15vh/vw, 18rem);
     position: absolute;
 }
 
