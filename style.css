@@ -11,19 +11,18 @@ body {
 }
 
 .container {
-    background-color: rgba( 0, 0, 0, 0.3 );
-    /* background-color: #1e1f22; */
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 2vh clamp(2vw, 5%, 6vw);
     backdrop-filter: blur(5px);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     align-content: center;
     width: clamp(20rem, 28vw, 50rem); /* Responsive width */
-    /* height: clamp(90px, 15vh, 151px); */
     height: clamp(5rem, 15vh/vw, 18rem);
     position: absolute;
 }
+
 
 #video {
     width: clamp(15rem, 20vw, 600px);
