@@ -76,6 +76,12 @@ p {
     background-color: rgba(0, 0, 0, 0.001);
 }
 
+@supports (-moz-appearance:none) {
+    .social-button:hover {
+        background-color: rgba(0, 0, 0, 0.28);
+    }
+}
+
 .bxl--instagram {
     display: inline-block;
     width: clamp(1.5rem ,2.2vw, 3.5rem);
