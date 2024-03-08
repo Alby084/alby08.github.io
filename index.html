@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="background-container"></div>
-<video autoplay muted loop disablePictureInPicture id="video-background" poster="images/background_img.png">
+<video autoplay muted loop id="video-background" poster="images/background_img.png">
     <source src="videos/background_earth.webm" type="video/webm">
     Your browser does not support HTML5 video.
 </video>
@@ -42,6 +42,10 @@
             <span class="bxl--twitch"></span>
         </a>
     </div>
+<script>
+    vid=document.getElementById("video-background")
+    vid.disablePictureInPicture = true
+</script>
     <!-- <script src="js/timer.js"></script> -->
 </body>
 </html>
