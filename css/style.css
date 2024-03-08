@@ -68,6 +68,14 @@ p {
     padding-right: 0.5rem;
 }
 
+.social-button:hover {
+    display: inline-block;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.001);
+}
+
 .bxl--instagram {
     display: inline-block;
     width: clamp(1.5rem ,2.2vw, 3.5rem);
