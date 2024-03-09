@@ -52,6 +52,10 @@ p {
     font-size: clamp(0.8rem, 1vw, 3rem);
 }
 
+#copyright {
+    font-size: clamp(0.45rem, 0.65vw, 1rem);
+}
+
 #video-background {
     object-fit: cover;
     width: 100%;
