@@ -50,10 +50,29 @@ h1 {
 p {
     color: #b0b0b0;
     font-size: clamp(0.8rem, 1vw, 3rem);
+    white-space: nowrap;
+}
+
+.frame-top{
+    font-size: clamp(0.8rem, 1vw, 2.1rem);
+}
+
+.frame-bot{
+    font-size: clamp(0.8rem, 1vw, 2.35rem);
 }
 
 #copyright {
-    font-size: clamp(0.45rem, 0.65vw, 1rem);
+    font-size: clamp(0.45rem, 0.65vw, 2.5rem);
+}
+
+.outer-socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials-title {
+    display: flex;
+    align-items: center;
 }
 
 #video-background {
@@ -68,14 +87,13 @@ p {
 
 .social-button {
     text-decoration: none;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0 0.5rem 0 0.5rem;
 }
 
 .social-button:hover {
     display: inline-block;
     background-size: 100% 100%;
-    border-radius: 10px;
+    border-radius: clamp(0.2rem, 0.4vw, 1rem);
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.001);
 }
@@ -121,8 +139,8 @@ p {
 .bxl--discord-alt, .bxl--twitch, .bxl--reddit, .bxl--youtube, .bxl--twitter, .bxl--steam, .bxl--github, .bxl--instagram{
     display: inline-block;
     background-repeat: no-repeat;
-    width: clamp(1.25rem ,1.76vw, 3.5rem);
-    height: clamp(1.25rem ,1.76vw, 3.5rem);
+    width: clamp(1.25rem ,1.76vw, 5rem);
+    height: clamp(1.25rem ,1.76vw, 5rem);
     background-size: 100% 100%;
 }
 
@@ -141,4 +159,11 @@ img {
     margin-right: clamp(0.8rem, 1vw, 3rem);
     border-radius: 20%;
     box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+#countdown{
+    font-family: Arial, sans-serif;
+    color: #b0b0b0;
+    font-size: clamp(1rem, 2vw, 3rem);
+    margin-top: clamp(0.48rem, 1vw, 3rem);;
 }

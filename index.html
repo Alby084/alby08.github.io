@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="background-container"></div>
-<video autoplay muted loop id="video-background" poster="src/images/background_img.png">
+<video autoplay muted loop playsinline preload="auto" id="video-background" poster="src/images/background_img.png">
     <source src="src/videos/background_earth.webm" type="video/webm">
     Your browser does not support HTML5 video.
 </video>
@@ -23,8 +23,14 @@
                 <h1>Alby08</h1>
             </div>
         </div>
-        <p>┌──────────── My socials ────────────┐</p>
-        <!-- <div id="countdown"></div> -->
+        <!--- <div id="countdown"></div> --->
+        <div class="outer-socials">
+            <div class="socials-title">
+                <p class="frame-top">┌────────────</p>
+                <p class="socials-text">&nbsp;My socials&nbsp;</p>
+                <p class="frame-top">────────────┐</p>
+            </div>
+        </div>
         <a href="https://github.com/Alby084" title="My Github Profile" class="social-button" target="_blank">
             <span class="bxl--github"></span>
         </a>
@@ -49,15 +55,14 @@
         <a href="https://www.twitch.tv/alby084" title="My Twitch Channel" class="social-button" target="_blank">
             <span class="bxl--twitch"></span>
         </a>
-        <p>└───────────────────────────────┘</p>
+        <div class="outer-socials">
+            <p class="frame-bot">└───────────────────────────────┘</p>
+        </div>
         <footer>
         <p id="copyright">&copy; 2024 Alby08. All rights reserved.</p>
         </footer>
     </div>
-<script>
-    vid=document.getElementById("video-background")
-    vid.disablePictureInPicture = true
-</script>
-    <!-- <script src="js/timer.js"></script> -->
+<script type="text/javascript" src="src/js/video-background.js"></script>
+<!--- <script type="text/javascript" src="src/js/timer.js"></script> --->
 </body>
 </html>

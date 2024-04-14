@@ -1,31 +1,29 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const countdownDate = new Date("Dec 31, 2023 23:59:59").getTime();
+// Set the target date and time for the countdown
+const countdownDate = new Date("Apr 16, 2024 00:00:00").getTime();
 
-    // Check if countdown date is in future
-    if (countdownDate > new Date().getTime()) {
-        const countdownInterval = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = countdownDate - now;
+// Get the countdown element from the HTML
+const countdownElement = document.getElementById("countdown");
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+// Update the countdown every second
+const countdownTimer = setInterval(function() {
+    // Get the current date and time
+    const now = new Date().getTime();
 
-            document.getElementById("countdown").innerHTML = formatTime(days) + "d " + formatTime(hours) + "h "
-                + formatTime(minutes) + "m " + formatTime(seconds) + "s ";
+    // Calculate the remaining time
+    const remainingTime = countdownDate - now;
 
-            if (distance < 0) {
-                clearInterval(countdownInterval);
-                document.getElementById("countdown").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    } else {
-        document.getElementById("countdown").innerHTML = "EXPIRED";
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+    // Display the countdown timer in the HTML element
+    countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    // Check if the countdown is finished
+    if (remainingTime < 0) {
+        clearInterval(countdownTimer);
+        countdownElement.innerHTML = "Countdown finished!";
     }
-
-    // Helper function to format time values with leading zeros
-    function formatTime(time) {
-        return time < 10 ? "0" + time : time;
-    }
-});
+}, 1000);
