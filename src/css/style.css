@@ -167,3 +167,21 @@ img {
     font-size: clamp(1rem, 2vw, 3rem);
     margin-top: clamp(0.48rem, 1vw, 3rem);;
 }
+
+.savetfbtn{
+    background-color: #4B4540;
+    color: #FDEECE;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: clamp(0.7rem, 0.9vw, 3rem) clamp(4rem, 5vw, 7rem);
+    font-weight: bold;
+    border-radius: clamp(0.4rem, 0.5vw, 0.7rem);
+    margin-bottom: 1rem;
+    font-size: clamp(0.8rem, 1vw, 3rem);
+}
+
+.savetfbtn:hover{
+    background-color: #f59e0b;
+    color: black;
+}
