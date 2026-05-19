@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="The soon to be portfolio for Alby08">
-    <meta name="keywords" content="Alby08, Alby084, Alby-_08, Alby-_084, Alby">
+    <meta name="description" content="Portfolio and links for Alby08">
+    <meta name="keywords" content="Alby08, Developer, Programmer">
     <meta name="author" content="Alby08">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alby08</title>
-	<link rel="icon" type="image/x-icon" href="src/images/favicon-new.ico">
-    <link rel="stylesheet" href="src/css/style.css?v=1.2">
+    <link rel="icon" type="image/x-icon" href="src/images/favicon-new.ico">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
+
 <body>
-<div class="background-container"></div>
-<video autoplay muted loop playsinline preload="auto" id="video-background" poster="src/images/background_img.png">
-    <source src="src/videos/background_earth.webm" type="video/webm">
-    Your browser does not support HTML5 video.
-</video>
-    <div class="container">
-        <div class="outer">
-            <div class="heading-container">
-                <img src="src/images/pfp.webp" alt="Cat with glasses that reflect outer space image">
-                <h1>Alby08</h1>
+    <div class="background-overlay"></div>
+    <video autoplay muted loop playsinline id="video-background" poster="src/images/background_img.png">
+        <source src="src/videos/background_earth.webm" type="video/webm">
+    </video>
+
+    <main class="terminal-container">
+        <header class="profile-header">
+            <img src="src/images/pfp.webp" alt="Alby08 Profile Picture" class="avatar">
+            <div class="header-text">
+                <h1 id="typewriter-text"></h1>
+                <p class="status-line">> Links generated.</p>
             </div>
+        </header>
+
+        <div class="divider">
+            <span>┌──── Social_Links ────┐</span>
         </div>
-        <!--- <div id="countdown"></div> --->
-        <div class="outer-socials">
-            <div class="socials-title">
-                <p class="frame-top">┌────────────</p>
-                <p class="socials-text">&nbsp;My socials&nbsp;</p>
-                <p class="frame-top">────────────┐</p>
-            </div>
+
+        <nav class="social-grid">
+            <a href="https://steamcommunity.com/id/Alby08/" title="Steam" target="_blank" class="social-btn">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                    <path
+                        d="M8.21 17.32L7 16.8a2.13 2.13 0 1 0 1.17-2.93l1.28.53a1.58 1.58 0 0 1-1.22 2.92zM12 2a10 10 0 0 0-10 9.34l5.38 2.21a2.31 2.31 0 0 1 .47-.24A2.62 2.62 0 0 1 9 13.1l2.44-3.56a3.8 3.8 0 1 1 3.8 3.8h-.08l-3.51 2.5a2.77 2.77 0 0 1-5.47.68l-3.77-1.6A10 10 0 1 0 12 2m5.79 7.5a2.53 2.53 0 1 0-2.53 2.5a2.54 2.54 0 0 0 2.53-2.5m-4.42 0a1.9 1.9 0 1 1 1.9 1.91a1.9 1.9 0 0 1-1.9-1.92z" />
+                </svg>
+            </a>
+            <a href="https://github.com/Alby084" title="GitHub" target="_blank" class="social-btn">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                    <path
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.699-2.782.603-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.022A9.606 9.606 0 0 1 12 6.82c.85.004 1.705.114 2.504.336 1.909-1.291 2.747-1.022 2.747-1.022.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/@Alby08" title="Youtube" class="social-btn" target="_blank">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                    <path
+                        d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765c1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831M9.996 15.005l.005-6l5.207 3.005z" />
+                </svg>
+            </a>
+            <a href="https://www.twitch.tv/alby084" title="Twitch" class="social-btn" target="_blank">
+                <svg viewBox="0 0 24 24" width="32" height="32">
+                    <path
+                        d="M4.265 3L3 6.236v13.223h4.502V21l2.531.85l2.392-2.391h3.658l4.923-4.924V3zm15.052 10.691l-2.813 2.814h-4.502l-2.391 2.391v-2.391H5.813V4.688h13.504zm-2.812-5.767v4.923h-1.688V7.924zm-4.502 0v4.923h-1.688V7.924z" />
+                </svg>
+            </a>
+        </nav>
+
+        <div class="divider">
+            <span>└──────────────────────┘</span>
         </div>
-        <a href="https://github.com/Alby084" title="My Github Profile" class="social-button" target="_blank">
-            <span class="bxl--github"></span>
-        </a>
-        <a href="https://www.instagram.com/alby_084/" title="My Instagram Profile"  class="social-button" target="_blank">
-            <span class="bxl--instagram"></span>
-        </a>
-        <a href="https://discord.com/users/258873334723379200" title="My Discord Account" class="social-button" target="_blank">
-            <span class="bxl--discord-alt"></span>
-        </a>
-        <a href="https://www.reddit.com/user/Alby08/" title="My Reddit Profile" class="social-button" target="_blank">
-            <span class="bxl--reddit"></span>
-        </a>
-        <a href="https://twitter.com/Alby082" title="My Twitter Profile" class="social-button" target="_blank">
-            <span class="bxl--twitter"></span>
-        </a>
-        <a href="https://steamcommunity.com/id/Alby08/" title="My Steam Account" class="social-button" target="_blank">
-            <span class="bxl--steam"></span>
-        </a>
-        <a href="https://www.youtube.com/@Alby08" title="My Youtube Channel" class="social-button" target="_blank">
-            <span class="bxl--youtube"></span>
-        </a>
-        <a href="https://www.twitch.tv/alby084" title="My Twitch Channel" class="social-button" target="_blank">
-            <span class="bxl--twitch"></span>
-        </a>
-        <div class="outer-socials">
-            <p class="frame-bot">└───────────────────────────────┘</p>
-        </div>
+
         <footer>
-        <p id="copyright">&copy; 2025 Alby08. All rights reserved.</p>
+            <p>&copy; 2026 Alby08. All rights reserved.</p>
         </footer>
-    </div>
-<script type="text/javascript" src="src/js/video-background.js"></script>
-<!--- <script type="text/javascript" src="src/js/timer.js"></script> --->
+    </main>
+
+    <script src="src/js/main.js"></script>
 </body>
+
 </html>
